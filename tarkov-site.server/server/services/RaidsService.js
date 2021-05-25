@@ -22,6 +22,16 @@ class RaidsService {
     }
     return raid
   }
+
+  async edit(body, id, userId) {
+    const foundRaid = await dbContext.Raids.findById(id)
+    /* @ts-ignore**/
+    if (foundRaid.creatorId !== userId) {
+      throw new BadRequest('You are not the creator!')
+    }
+    // findOne
+    return await dbContext.Raids.findOneAndUpdate({ _id: id }, { ammoType: body.ammoType, title: body.title, characterType: body.characterType, map: body.map }, { new: true })
+  }
 }
 
 export const raidsService = new RaidsService()
