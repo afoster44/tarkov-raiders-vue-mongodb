@@ -10,10 +10,7 @@ module.exports = {
   env: {
     node: true
   },
-  extends: [
-    'plugin:vue/vue3-strongly-recommended',
-    '@vue/standard'
-  ],
+  extends: ['plugin:vue/vue3-strongly-recommended', '@vue/standard'],
   parserOptions: {
     ecmaVersion: 2020
   },
@@ -21,13 +18,16 @@ module.exports = {
     'no-console': PROD ? ERROR : WARN,
     'no-debugger': PROD ? ERROR : WARN,
     'space-before-function-paren': [WARN, NEVER],
-    'vue/max-attributes-per-line': [ERROR, {
-      singleline: 5,
-      multiline: {
-        max: 1,
-        allowFirstLine: true
+    'vue/max-attributes-per-line': [
+      ERROR,
+      {
+        singleline: 5,
+        multiline: {
+          max: 1,
+          allowFirstLine: true
+        }
       }
-    }],
+    ],
     'vue/html-self-closing': OFF
   }
 }

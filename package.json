@@ -9,5 +9,9 @@
   },
   "engines": {
     "node": "^14.17.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.27.0",
+    "eslint-plugin-vue": "^7.9.0"
   }
 }
