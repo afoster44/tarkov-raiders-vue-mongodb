@@ -1,0 +1,13 @@
+{
+  "name": "tarkov-site",
+  "version": "1.0.0",
+  "scripts": {
+    "setup:app": "npm run setup:client && npm run setup:server",
+    "setup:client": "cd tarkov-site.client && npm i",
+    "setup:server": "cd tarkov-site.server && npm i",
+    "start": "node tarkov-site.server/index.js"
+  },
+  "engines": {
+    "node": "^14.17.0"
+  }
+}
