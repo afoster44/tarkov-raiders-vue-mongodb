@@ -17,6 +17,12 @@ const routes = [
     component: loadPage('AboutPage')
   },
   {
+    path: '/raid',
+    name: 'RaidPage',
+    component: loadPage('RaidPage'),
+    beforeEnter: authGuard
+  },
+  {
     path: '/account',
     name: 'Account',
     component: loadPage('AccountPage'),
