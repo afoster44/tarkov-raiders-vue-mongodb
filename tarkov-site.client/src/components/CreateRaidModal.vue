@@ -42,14 +42,14 @@
                 <div class="col-6">
                   <button class="btn btn-danger dropdown-toggle"
                           type="button"
-                          id="dropdownMenuButton"
+                          id="dropdownMenuButtonMaps"
                           data-toggle="dropdown"
                           aria-haspopup="true"
                           aria-expanded="false"
                   >
                     Maps here
                   </button>
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButtonMaps">
                     <button class="btn dropdown-item" @click="state.raid.map = 'Woods'">
                       Woods
                     </button>
@@ -76,25 +76,61 @@
                 <div class="col-6">
                   <button class="btn btn-danger dropdown-toggle"
                           type="button"
-                          id="dropdownMenuButton"
+                          id="dropdownMenuButtonAmmo"
                           data-toggle="dropdown"
                           aria-haspopup="true"
                           aria-expanded="false"
                   >
                     Ammo here
                   </button>
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButtonAmmo">
+                    <!-- low caliber rifle rounds -->
+                    <button class="btn dropdown-item" @click="state.raid.ammoType = 5.45">
+                      5.45x39mm
+                    </button>
                     <button class="btn dropdown-item" @click="state.raid.ammoType = 5.56 ">
-                      5.56 x 45mm
+                      5.56x45mm
                     </button>
                     <button class="btn dropdown-item" @click="state.raid.ammoType = 7.62">
-                      7.62 x 39mm
+                      7.62x39mm
                     </button>
-                    <button class="btn dropdown-item" @click="state.raid.ammoType = 9.19">
-                      9.19 x 19mm
+                    <button class="btn dropdown-item" @click="state.raid.ammoType = .366">
+                      .366 TKM
+                    </button>
+
+                    <!-- high caliber rifle rounds
+                         we will ad 51 and 54 to the end for 7.62x51 and 7.62x54R snipers -->
+                    <button class="btn dropdown-item" @click="state.raid.ammoType = 7.6251">
+                      7.62x51mm
+                    </button>
+                    <button class="btn dropdown-item" @click="state.raid.ammoType = 7.6254">
+                      7.62x54mmR
+                    </button>
+                    <button class="btn dropdown-item" @click="state.raid.ammoType = .300">
+                      .300 Blackout
+                    </button>
+                    <button class="btn dropdown-item" @click="state.raid.ammoType = .338">
+                      .338 Lapua Magnum
+                    </button>
+
+                    <!-- smg rounds -->
+                    <button class="btn dropdown-item" @click="state.raid.ammoType = 5.7">
+                      5.7x28mm FN
+                    </button>
+                    <button class="btn dropdown-item" @click="state.raid.ammoType = 4.6">
+                      4.6x30mm HK
+                    </button>
+                    <button class="btn dropdown-item" @click="state.raid.ammoType = .45">
+                      .45 ACP
                     </button>
                     <button class="btn dropdown-item" @click="state.raid.ammoType = 9.18">
-                      9.18 x 18mm
+                      9x18mm
+                    </button>
+                    <button class="btn dropdown-item" @click="state.raid.ammoType = 9.19">
+                      9x19mm
+                    </button>
+                    <button class="btn dropdown-item" @click="state.raid.ammoType = 9.21">
+                      9x21mm
                     </button>
                   </div>
                 </div>
