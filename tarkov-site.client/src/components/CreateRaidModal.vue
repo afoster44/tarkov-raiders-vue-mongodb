@@ -15,6 +15,13 @@
          aria-labelledby="exampleModalLabel"
          aria-hidden="true"
     >
+      <!-- title: { type: String, required: true },
+    map: { type: String, required: true },
+    characterType: { type: String, required: true },
+    ammoType: { type: String, required: true },
+    extracted: { type: Boolean, default: false, required: true },
+    creatorId: { type: String, ref: 'Account', required: true } -->
+
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -31,32 +38,61 @@
                 <input
                   type="text"
                   class="form-control"
-                  placeholder="Name"
-                  name="name"
-                  id="name"
-                  aria-describedby="helpId"
+                  placeholder="Title"
+                  name="title"
+                  id="title"
+                  aria-describedby="title"
                 />
               </div>
+              <div class="row justify-content-center">
+                <div class="col-6">
+                  <button class="btn btn-danger dropdown-toggle"
+                          type="button"
+                          id="dropdownMenuButton"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                  >
+                    Maps here
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <RaidDropdownMapComponent />
+                  </div>
+                </div>
+                <div class="col-6">
+                  <button class="btn btn-danger dropdown-toggle"
+                          type="button"
+                          id="dropdownMenuButton"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                  >
+                    Ammo here
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <RaidDropdownAmmoComponent />
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-2 mb-2">
+                <div class="col-12">
+                </div>
+              </div>
+
               <div class="form-group">
+                <label for="characterType">Pmc or Scav?</label>
                 <input
                   type="text"
                   class="form-control m-1"
-                  placeholder="Description"
-                  name="description"
-                  id="description"
+                  placeholder="characterType"
+                  name="characterType"
+                  id="characterType"
                   aria-describedby="helpId"
                 >
-                <div class="form-check">
-                  <input type="checkbox"
-                         class="form-check-input"
-                         name="isPrivate"
-                         id="isPrivate"
-                  >
-                  <label class="form-check-label">Would you like the to be a private Vault?</label>
-                </div>
               </div>
+
               <button type="submit" class="btn btn-primary">
-                Create Vault
+                Create Raid
               </button>
             </form>
           </div>
