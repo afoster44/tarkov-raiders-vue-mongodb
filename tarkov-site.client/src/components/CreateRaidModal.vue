@@ -1,5 +1,5 @@
 <template>
-  <div class="create-vault-modal">
+  <div class="create-vault-modal d-flex align-items-center">
     <i class=" btn fas fa-plus-square btn-danger"
        aria-hidden="true"
        type="button"

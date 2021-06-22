@@ -1,5 +1,5 @@
 <template>
-  <div class="raids col-12">
+  <div class="raids col-8">
     <p>{{ raid.title }}</p>
   </div>
 </template>

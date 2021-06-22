@@ -17,9 +17,9 @@ const routes = [
     component: loadPage('AboutPage')
   },
   {
-    path: '/raid',
-    name: 'RaidPage',
-    component: loadPage('RaidPage'),
+    path: '/raids',
+    name: 'RaidsPage',
+    component: loadPage('RaidsPage'),
     beforeEnter: authGuard
   },
   {
