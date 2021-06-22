@@ -1,7 +1,7 @@
 <template>
   <div class="container-fluid raids-page">
-    <div class="row">
-      <div class="col-sm-2 offset-10 raids-intro text-right">
+    <div class="row mt-2 mr-2">
+      <div class="col-sm-2 offset-10 raids-intro text-center">
         <h1 class="mr-3">
           Create Raid
         </h1>
