@@ -21,3 +21,25 @@ main {
   display: flex;
   align-items: stretch;
 }
+
+.home {
+  background-image: url(https://www.escapefromtarkov.com/uploads/content/media/b5ae8ed33c4973e784541172aa6d9065.jpg);
+  background-color: #cccccc;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.raids {
+  background-image: url(https://i0.wp.com/free-game.best/wp-content/uploads/2020/06/Escape-from-Tarkov-Free-Download-Size.png);
+  background-color: #cccccc;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-text {
+  color: rgba($color: #83808079, $alpha: 1.0);
+}
+
+.main-intro {
+  min-height: 15vh;
+}

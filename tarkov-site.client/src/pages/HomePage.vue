@@ -1,11 +1,14 @@
 <template>
   <div class="container-fluid home">
-    <div class="row main-view">
-      <div class="col-12">
-        <h1>
-          Welcome to Escape The Grave, here is a place all things Tarkov. Please give any feedback you may have to help better your experience!
+    <div class="row main-intro">
+      <div class="col-12 d-flex justify-content-center align-items-center">
+        <h1 class="main-text">
+          Welcome to Escape The Grave
         </h1>
-        <!-- setup and ready to go for raids component -->
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-9 offset-1">
         <Raids v-for="raid in state.raids" :key="raid.id" :raid="raid" />
       </div>
     </div>
