@@ -6,7 +6,7 @@
           Welcome to Escape The Grave, here is a place all things Tarkov. Please give any feedback you may have to help better your experience!
         </h1>
         <!-- setup and ready to go for raids component -->
-        <p>{{ state.raids }}</p>
+        <Raids v-for="raid in state.raids" :key="raid.id" :raid="raid" />
       </div>
     </div>
   </div>

@@ -2,7 +2,7 @@ import { Auth0Provider } from '@bcwdev/auth0provider'
 import { goalsService } from '../services/GoalsService'
 import BaseController from '../utils/BaseController'
 
-export class RaidsController extends BaseController {
+export class GoalsController extends BaseController {
   constructor() {
     super('api/goals')
     this.router
