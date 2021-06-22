@@ -1,6 +1,8 @@
 <template>
-  <div class="raids col-8">
-    <p>{{ raid.title }}</p>
+  <div class="raids-component card bg-info mt-5 border border-light">
+    <p class="text-light ml-2 mt-1">
+      {{ raid.title }}
+    </p>
   </div>
 </template>
 

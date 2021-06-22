@@ -9,7 +9,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-sm-10 offset-2">
+      <div class="col-sm-8 offset-2">
         <Raids v-for="raid in state.raids" :key="raid.id" :raid="raid" />
       </div>
     </div>
