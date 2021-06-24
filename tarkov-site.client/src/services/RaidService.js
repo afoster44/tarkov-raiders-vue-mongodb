@@ -1,17 +1,26 @@
 import { AppState } from '../AppState'
+import { logger } from '../utils/Logger'
 import { api } from './AxiosService'
 
 class RaidService {
   async createRaid(raid) {
-    const res = await api.post('api/raids', raid)
-    console.log(res)
-    AppState.raids += res.data
+    try {
+      const res = await api.post('api/raids', raid)
+      console.log(res)
+      AppState.raids += res.data
+    } catch (error) {
+      logger.error(error)
+    }
   }
 
   async getRaids() {
-    const res = await api.get('api/raids')
-    console.log(res)
-    AppState.raids = res.data
+    try {
+      const res = await api.get('api/raids')
+      console.log(res)
+      AppState.raids = res.data
+    } catch (error) {
+      logger.error(error)
+    }
   }
 }
 
