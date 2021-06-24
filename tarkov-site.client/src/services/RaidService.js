@@ -6,7 +6,7 @@ class RaidService {
   async createRaid(raid) {
     try {
       const res = await api.post('api/raids', raid)
-      console.log(res)
+      logger.log(res)
       AppState.raids += res.data
     } catch (error) {
       logger.error(error)
@@ -16,8 +16,17 @@ class RaidService {
   async getRaids() {
     try {
       const res = await api.get('api/raids')
-      console.log(res)
+      logger.log(res)
       AppState.raids = res.data
+    } catch (error) {
+      logger.error(error)
+    }
+  }
+
+  async getRaid(id) {
+    try {
+      const res = await api.get('api/raids/' + id)
+      logger.log(res.data)
     } catch (error) {
       logger.error(error)
     }
