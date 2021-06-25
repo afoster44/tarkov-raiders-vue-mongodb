@@ -1,5 +1,8 @@
 <template>
   <div class="container-fluid raid-details">
+    <h1>
+      {{ state.raid.title }}
+    </h1>
     <p>raid details page</p>
   </div>
 </template>

@@ -27,6 +27,7 @@ class RaidService {
     try {
       const res = await api.get('api/raids/' + id)
       logger.log(res.data)
+      AppState.raid = res.data
     } catch (error) {
       logger.error(error)
     }
