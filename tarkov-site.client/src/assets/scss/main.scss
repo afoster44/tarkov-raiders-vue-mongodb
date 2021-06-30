@@ -71,6 +71,14 @@ main {
   background-repeat: no-repeat;
 }
 
+.raidMapReserve {
+  background-image: url(https://gamepedia.cursecdn.com/escapefromtarkov_gamepedia/c/c0/ReserveMap3d.jpg);
+  min-height: 110vh;
+  min-width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 @media only screen and (max-width: 576px) {
   .main-intro {
     min-height: 50px;

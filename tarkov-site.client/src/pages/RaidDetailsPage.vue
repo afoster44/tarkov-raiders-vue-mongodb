@@ -12,6 +12,10 @@
       <div class="col-sm-12 raidMapInterchange">
       </div>
     </div>
+    <div class="row" v-else-if="state.raid.map === 'Reserve'">
+      <div class="col-sm-12 raidMapReserve">
+      </div>
+    </div>
     <h1>
       {{ state.raid.title }}
     </h1>
