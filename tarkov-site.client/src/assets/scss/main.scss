@@ -52,10 +52,16 @@ main {
 
 .raidMapWoods {
   background-image: url(https://forum.escapefromtarkov.com/uploads/monthly_2020_12/Map_Final.thumb.png.048b98b4d2a9acb4556e44102ca4781d.png);
-  min-height: 80vh;
-  min-width: 100vh;
-  background-size: contain;
+  min-height: 100vh;
+  background-size: cover;
 
+  background-repeat: no-repeat;
+}
+
+.raidMapCustoms {
+  background-image: url(https://i.redd.it/621mvv1lc3941.jpg);
+  min-height: 100vh;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 

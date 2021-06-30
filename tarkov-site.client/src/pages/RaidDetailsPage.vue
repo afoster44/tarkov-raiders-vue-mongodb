@@ -4,7 +4,7 @@
       <div class="col-sm-12 raidMapWoods">
       </div>
     </div>
-    <div class="row" v-else-if="state.raid.map === 'customs'">
+    <div class="row" v-else-if="state.raid.map === 'Customs'">
       <div class="col-sm-12 raidMapCustoms">
       </div>
     </div>
