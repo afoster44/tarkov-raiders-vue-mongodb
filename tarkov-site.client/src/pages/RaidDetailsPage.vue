@@ -1,5 +1,13 @@
 <template>
   <div class="container-fluid raid-details">
+    <div class="row" v-if="state.raid.map === 'Woods'">
+      <div class="col-sm-12 raidMapWoods">
+      </div>
+    </div>
+    <div class="row" v-else-if="state.raid.map === 'customs'">
+      <div class="col-sm-12 raidMapCustoms">
+      </div>
+    </div>
     <h1>
       {{ state.raid.title }}
     </h1>
