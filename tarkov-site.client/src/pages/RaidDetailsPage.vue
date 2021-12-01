@@ -16,10 +16,17 @@
       <div class="col-sm-12 raidMapReserve">
       </div>
     </div>
-    <h1>
-      {{ state.raid.title }}
-    </h1>
-    <p>raid details page</p>
+    <div class="row">
+      <div class="col-sm-6">
+        <h1>
+          {{ state.raid.title }}
+        </h1>
+        <p>raid details page</p>
+      </div>
+      <div v-if="state.raid.ammoType === '5.56'" class="col-sm-6 sevenSixTwoAmmo">
+        <img src="../assets/img/sevensixtwo.png" alt="">
+      </div>
+    </div>
   </div>
 </template>
 
